@@ -35,8 +35,14 @@ if (userName) {
 console.log(userName);
 
 
+
 const isComing = confirm("Підтвердіть дію");
-
-
-
 console.log(isComing);
+
+
+const isOk= confirm("Дякую за підтвердження!");
+console.log(isOk);
+
+const isfalse= confirm("Дію відмінено!");
+console.log(isfalse);
+
