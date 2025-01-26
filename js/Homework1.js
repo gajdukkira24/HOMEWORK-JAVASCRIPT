@@ -36,16 +36,15 @@ console.log(userName);
 
 
 
-const isComing = confirm("Підтвердіть дію");
+const isComing ="Підтвердіть дію";
+alert(isComing)
 console.log(isComing);
 
+const shouldrennu =confirm("Дія може бути небезпечна");
+console.log(shouldrennu  )
 
-const isOk= confirm("Дякую за підтвердження!");
-console.log(isOk);
 
-const isfalse= confirm("Дію відмінено!");
 
-console.log(isfalse);
 
 
 
