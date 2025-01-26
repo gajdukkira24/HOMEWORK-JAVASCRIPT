@@ -1,9 +1,9 @@
-let age ='14 years'
+let age ='14 років'
 console.log(age)
-const myname = 'Kira'
+const myname = 'Мене звати Кіра'
  console.log(myname);
 
- let isStudent = (' false')
+ let isStudent = Boolean(' false')
 console.log(isStudent)
 
 
@@ -36,12 +36,16 @@ console.log(userName);
 
 
 
-const isComing ="Підтвердіть дію";
-alert(isComing)
-console.log(isComing);
+const isConfirm ="Підтвердіть дію";
+alert(isConfirm)
+console.log(isConfirm);
 
-const shouldrennu =confirm("Дія може бути небезпечна");
+const shouldrennu =alert(" Увага! дія може бути небезпечна");
 console.log(shouldrennu  )
+
+const sure =confirm("Ви впевнені  що хочете продовжити");
+console.log(sure)
+
 
 
 
