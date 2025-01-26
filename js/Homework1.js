@@ -1,9 +1,9 @@
-let age ='14'
+let age ='14 years'
 console.log(age)
 const myname = 'Kira'
  console.log(myname);
 
- let isStudent ='true or false'
+ let isStudent = (' false')
 console.log(isStudent)
 
 
@@ -44,5 +44,9 @@ const isOk= confirm("Дякую за підтвердження!");
 console.log(isOk);
 
 const isfalse= confirm("Дію відмінено!");
+
 console.log(isfalse);
+
+
+
 
