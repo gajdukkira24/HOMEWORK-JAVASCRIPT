@@ -44,7 +44,7 @@ const shouldrennu =alert(" Увага! дія може бути небезпеч
 console.log(shouldrennu  )
 
 const sure =confirm("Ви впевнені  що хочете продовжити");
-console.log(sure)
+console.log(sure);
 
 
 
