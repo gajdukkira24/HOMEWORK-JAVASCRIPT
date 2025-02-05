@@ -74,7 +74,7 @@ console.log(roundedDown);
 // змінній parsedIntта вивести результат в консоль.
 
 const intString = "123"
-const parseint =parseInt(123);
+const parseint =parseInt(intString);
 console.log(parseint);
 
 
@@ -94,5 +94,28 @@ console.log(sqrtNumber);
 //число. Результат зберегти в змінній convertedstring та вивести результат в консоль.
 
 const stringNumber = "256";
-const convertedstring =parseInt(256);
+const convertedstring =parseInt(stringNumber);
 console.log(convertedstring);
+
+
+
+// Задача №1.
+// Знайти максимальне число з 10,58,39,-150,0
+
+
+// Задача №2.
+// Округлити число 58.858 до числа 58
+const floatnumber =  58.858;
+const  parsedfloat = Math.floor(floatnumber);
+console.log(parsedfloat);
+
+// задача №3
+// Напиши скрип,який генерує випадкове число від 10 до 80
+// Math.random() * (max - min) + min
+// const max = 80;
+// const min = 10;
+
+const max = 80;
+ const min = 10;
+ const  randomNumber = Math.random() * (max - min) + min
+ console.log( randomNumber);
