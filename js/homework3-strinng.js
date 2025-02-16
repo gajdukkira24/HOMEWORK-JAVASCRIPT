@@ -22,7 +22,7 @@ let word2 ="name";
 let word3 = "is"
 let fullName = word1 + " " + word2 + " " + word3;
 
-console.log(fullName +  "Victor");
+console.log(fullName+ " "  + "Victor");
 
 
 
@@ -41,12 +41,13 @@ console.log(messageThanks );
 
 
 
+
 // Додаткові для практики:
 // 5. Створити змінну, яка містить рядок з вашим ім'ям та прізвищем.
 //  Використовуючи метод .indexOf(), знайти і вивести в консоль 
 // позицію, на якій знаходиться пробіл між ім'ям та прізвищем.
 
-const myName ="Кіра  Гайдук";
+const myName ="Кіра Гайдук";
 console.log(myName .indexOf(" "));
 
 
@@ -65,3 +66,23 @@ if (userWord) {
   const lowerUserWord = userWord.toLowerCase();
 
 }
+
+
+// 1. зробити дві змінні: 
+// ПЕРШУ - <myFavoriteGameName> зі значенням вашої улюбленої гри(наприклад "minecraft")
+// та ДРУГУ - <myFavoriteGameText> зі значенням рядка = "my favorite game's name" 
+// 2.
+// За доромогою властивості або метода рядка 
+// отримати ОСТАННІЙ символ змінної <myFavoriteGameName>
+// та записати це значення у ТРЕТЮ змінну <lastCharacter>.
+// 3.
+// Зробити перетворення значення змінної <lastCharacter> 
+// на ВЕЛИКУ(заглавну літеру).
+// 4.
+// Вивести в консоль повідомлення, використовуючи 
+// значення ВСІХ ТРЬОХ змінних у такому форматі:
+// "The last letter in <myFavoriteGameText> "<myFavoriteGameName>" is "<lastCharacter>" !" 
+// Використовуйте шаблонний рядок!!
+
+// приклад рядка, що має вийти
+// The last letter in my favorite game's name "minecraft" is "T" !
