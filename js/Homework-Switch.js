@@ -103,3 +103,37 @@ switch (color) {
 // 5. Створіть змінні для зберігання двох чисел та оператора 
 // (як у списку select). Виконайте відповідну операцію та виведіть результат. У випадку ділення на нуль — виведіть
 //  попередження.
+
+
+
+const num1 = 10; 
+const num2 = 5;  
+const operator = "/"; 
+
+let result;
+
+switch (operator) {
+    case "+":
+        result = num1 + num2;
+        break;
+    case "-":
+        result = num1 - num2;
+        break;
+    case "*":
+        result = num1 * num2;
+        break;
+    case "/":
+        if (num2 === 0) {
+            console.log("Помилка: ділення на нуль!");
+            break;
+        }
+        result = num1 / num2;
+        break;
+    default:
+        console.log("Некоректний оператор");
+        break;
+}
+
+if (result !== undefined) {
+    console.log(`Результат: ${result}`);
+}
