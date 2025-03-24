@@ -10,6 +10,7 @@ for(let i = 1; i < friends.length; i++) {
     console.log(string);
 }
 console.log(string.join);
+console.log(friends.join(","));
 
 // 2. Працюємо з колекцією карток в trello. Метод splice() (можна використати інші методи)
 
