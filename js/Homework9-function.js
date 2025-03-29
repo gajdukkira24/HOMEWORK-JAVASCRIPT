@@ -6,7 +6,7 @@
 // Нумерація повинна починатися з 1. Наприклад, для першого елемента масиву ['Mango', 'Poly', 'Ajax'] 
 // з індексом 0 буде виведено '1 - Mango', а для індексу 2 виведе '3 - Ajax'.
 
-function logItems(array) {
+const logItems = function logItems(array) {
     for (let i = 0; i < array.length; i++) {
       console.log(`${i + 1} - ${array[i]}`);
     }
@@ -19,7 +19,7 @@ function logItems(array) {
 //    ціну гравіювання одного слова, і повертає ціну гравіювання всіх слів в рядку.
 
 
-function calculateEngravingPrice(message, pricePerWord) {
+ const calculateEngravingPrice =  function calculateEngravingPrice(message, pricePerWord) {
     const words = message.split(" ");
     
    
@@ -34,7 +34,7 @@ function calculateEngravingPrice(message, pricePerWord) {
 
   
 
-function findLongestWord(string) {
+const findLongestWord = function findLongestWord(string) {
     const words = string.split(" "); 
     let longestWord = ""; 
   
