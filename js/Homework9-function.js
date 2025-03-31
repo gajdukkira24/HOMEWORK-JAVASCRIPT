@@ -69,5 +69,18 @@ function formatString(string) {
   console.log(formatString("Curabitur ligula sapien, tincidunt non.")); 
 
  
-
+//   Напиши функцію checkForSpam(message), приймаючу 1 параметр message — рядок. Функція перевіряє її на вміст слів spam і sale. 
+//   Якщо знайшли заборонене слово, то функція повертає true, якщо заборонених слів немає функція повертає false.
+//    Слова в рядку можуть бути в довільному регістрі.
+const checkForSpam = function (message) {
+    const normalizedMessage = message.toLowerCase(); 
   
+    if (normalizedMessage.includes('spam') || normalizedMessage.includes('sale')) {
+      return true; 
+    } else {
+      return false; 
+    }
+  };
+  
+  const login = 'sale';
+  console.log(checkForSpam(login, 'spamsale')); 
