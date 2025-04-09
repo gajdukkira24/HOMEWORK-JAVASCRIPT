@@ -37,7 +37,7 @@ function operate(a, b, callback) {
   const division = (a, b) => b !== 0 ? a / b : 
   
  
-  console.log("Додаваня:", operate(10, 40, add));             
+  console.log("додаваня:", operate(10, 40, add));             
   console.log("Різниця:", operate(20, 2, subtraction));   
   console.log("Множення:", operate(6, 8, multiplication));
   console.log("Ділення:", operate(40, 4, division));      
