@@ -7,37 +7,37 @@ const bankAccount = {
     ownerName: "Kira",
     accountNumber: "+380971179474",
     balance: 5500,
-  
+
     deposit(amount) {
-      if (amount <= 0) {
-        alert("Сума повинна бути більшою за 0");
-      } else {
-        this.balance += amount;
-        alert(` Поповнено на ${amount} грн. Баланс: ${this.balance} грн.`);
-      }
+        if (amount <= 0) {
+            alert("Сума повинна бути більшою за 0");
+        } else {
+            this.balance += amount;
+            alert(` Поповнено на ${amount} грн. Баланс: ${this.balance} грн.`);
+        }
     },
-  
+
     withdraw(amount) {
-      if (amount > this.balance) {
-        alert(" Недостатньо коштів на рахунку!");
-      } else {
-        this.balance -= amount;
-        alert(` Знято ${amount} грн. Залишок: ${this.balance} грн.`);
-      }
+        if (amount > this.balance) {
+            alert(" Недостатньо коштів на рахунку!");
+        } else {
+            this.balance -= amount;
+            alert(` Знято ${amount} грн. Залишок: ${this.balance} грн.`);
+        }
     }
-  };
-  const isDeposit = confirm("Хочеш поповнити рахунок? ( Так,or Зняти гроші)");
+};
+const isDeposit = confirm("Хочеш поповнити рахунок? ( Так,or Зняти гроші)");
 
 const amount = Number(prompt("Введи суму:"));
 
 if (isDeposit) {
-  bankAccount.deposit(amount);
+    bankAccount.deposit(amount);
 } else {
-  bankAccount.withdraw(amount);
+    bankAccount.withdraw(amount);
 }
 
 console.log(bankAccount);
-  
+
 
 
 
@@ -50,20 +50,20 @@ console.log(bankAccount);
 
 const weather = {
     temperature: "-2°C",
-    humidity: "30%" ,
+    humidity: "30%",
     windSpeed: "18km",
 
 
 }
-const temperature = "-2°C" ;
+const temperature = "-2°C";
 const checkWeather = temperature >= 0 ? 'true' : 'false';
 console.log(checkWeather);
 console.log(weather);
 
 
-if ( temperature < 0 ) {
+if (temperature < 0) {
     console.log("Температура вища за 0°C");
-} else  {
+} else {
     console.log("Температура нижче за 0°C");
 }
 
@@ -75,27 +75,27 @@ if ( temperature < 0 ) {
 // 3 Створіть об’єкт "user", який буде мати властивості "name", "email", "password". Додайте метод "login",
 //  який буде перевіряти правильність введеного email та password. 
 
- const objectUser ={
+const objectUser = {
     name: "Kira",
     email: "kiragajdukgg@gmail.com",
-    password: 123456789 ,
-    
+    password: 123456789,
 
- }
+
+}
 let login = "kiragajdukgg@gmail.com";
-let password =  123456789;
- if (login.length >= 5 && login.includes('@') > login.indexOf('@') && password.length >= 6) {
+let password = 123456789;
+if (login.length >= 5 && login.includes('@') > login.indexOf('@') && password.length >= 6) {
     console.log("Перенаправлення на іншу сторінку");
-  } else {
+} else {
     console.log("Помилка: неправильне заповнення");
-  }
+}
 
 
-  if (login) {
+if (login) {
     objectUser.login;
-  } else {
+} else {
     objectUser.password;
-  }
+}
 console.log(objectUser);
 
 
@@ -109,22 +109,21 @@ const movie = {
     director: "Hwang Dong-hyuk",
     year: 2024,
     rating: 8,
-  
-    isHighRated() {
-      return this.rating > 8;
-    }
-  };
-  
 
-  console.log("Назва:", movie.title);
-  console.log("Режисер:", movie.director);
-  console.log("Рік:", movie.year);
-  console.log("Рейтинг:", movie.rating);
-  
- 
-  if (movie.isHighRated()) {
+    isHighRated() {
+        return this.rating > 8;
+    }
+};
+
+
+console.log("Назва:", movie.title);
+console.log("Режисер:", movie.director);
+console.log("Рік:", movie.year);
+console.log("Рейтинг:", movie.rating);
+
+
+if (movie.isHighRated()) {
     console.log(" Фільм має високий рейтинг (більше 8)");
-  } else {
+} else {
     console.log(" Фільм має рейтинг 8 ");
-  }
-  
+}
