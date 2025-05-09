@@ -186,21 +186,21 @@ const getUsersWithEyeColor = (users, color) => {
     return users.map(users => users.eyeColor)
   };
   
-  console.log(getUsersWithEyeColor(users, 'blue')); // [об'єкт Moore Hensley, об'єкт Sharlene Bush, об'єкт Carey Barr]
+  console.log(getUsersWithEyeColor(users, 'blue')); 
 
 
   const getUsersWithGender = (users, gender) => {
-    return users.map(users => users.gender)
+    return users.filter(users => users.gender)
   
   };
   
-  console.log(getUsersWithGender(users, 'male')); // [ 'Moore Hensley', 'Ross Vazquez', 'Carey Barr', 'Blackburn Dotson' ]
+  console.log(getUsersWithGender(users, 'male')); 
 
   const getInactiveUsers = users => {
-    return users.map(users => users.isActive)
+    return users.filter(users => users.isActive)
   };
   
-  console.log(getInactiveUsers(users)); // [об'єкт Moore Hensley, об'єкт Ross Vazquez, об'єкт Blackburn Dotson]
+  console.log(getInactiveUsers(users)); 
 
 
 //   Отримати користувача (не масив) по email (поле email, він унікальний).
@@ -208,5 +208,5 @@ const getUserWithEmail = (users, email) => {
   return users.find(user => user.email === email);
 };
 
-console.log(getUserWithEmail(users, 'shereeanthony@kog.com')); // {об'єкт користувача Sheree Anthony}
-console.log(getUserWithEmail(users, 'elmahead@omatom.com')); // {об'єкт користувача Elma Head}
+console.log(getUserWithEmail(users, 'shereeanthony@kog.com')); 
+console.log(getUserWithEmail(users, 'elmahead@omatom.com')); 
